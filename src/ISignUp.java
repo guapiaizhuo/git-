@@ -4,14 +4,13 @@ import java.util.StringTokenizer;
 
 public interface ISignUp {
     Scanner scanner = new Scanner(System.in);
-    String method = scanner.next();
-    String data = scanner.next();
+    String method = scanner.nextLine();
+    String data = scanner.nextLine();
     public void print(Integer []data,ArrayList plan);
     // 检查是否有 stuType对应的班级名额
     // 如果没有剩余名额，请返回 false ，否则学生将报名进入该班级并返回 true
     public boolean addStudent (Integer stuType);
     public static IParams parse() throws Exception{
-
         StringTokenizer methodMap = new StringTokenizer(method,",");
         StringTokenizer dataMap = new StringTokenizer(data,"]");
         SchoolSystem schoolSystem = null;
