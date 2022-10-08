@@ -79,7 +79,7 @@ public class SchoolSystem implements ISignUp, IParams{
         }
     }
 
-    //重写招生计划方法
+    //重写招生计划的方法
     @Override
     public ArrayList<Integer> getPlanSignUp() {
         StringTokenizer methodMap = new StringTokenizer(method,",");
